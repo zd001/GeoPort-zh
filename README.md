@@ -1,3 +1,7 @@
+汉化版自用
+
+
+
 # GeoPort v5: Your iOS Location, Anywhere! 🌍
 
 <p align="center">
