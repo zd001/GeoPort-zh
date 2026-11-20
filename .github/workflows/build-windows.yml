@@ -1,0 +1,40 @@
+name: Build GeoPort Windows EXE
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: 拉取仓库代码
+        uses: actions/checkout@v4
+
+      - name: 配置 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装依赖库
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyinstaller flask requests psutil pycountry pyuac pymobiledevice3
+
+      - name: 使用 PyInstaller 打包 EXE
+        working-directory: src
+        run: |
+          pyinstaller --onefile --name "GeoPort_CN" `
+            --add-data "templates;templates" `
+            --collect-all pymobiledevice3 `
+            --collect-data pycountry `
+            --uac-admin `
+            main.py
+
+      - name: 上传打包产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: GeoPort_CN-Windows
+          path: src/dist/GeoPort_CN.exe
