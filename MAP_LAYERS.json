@@ -12,8 +12,8 @@
   "layers": [
     {
       "id": "esri_dark_gray",
-      "name": "Esri Dark Canvas (with Labels)",
-      "category": "Dark",
+      "name": "Esri 深色画布（带标注）",
+      "category": "深色模式",
       "maxZoom": 16,
       "attribution": "Tiles &copy; Esri &mdash; Esri, HERE, Garmin, OpenStreetMap",
       "sublayers": [
@@ -23,8 +23,8 @@
     },
     {
       "id": "osm_midnight",
-      "name": "OSM Midnight (Detailed Dark)",
-      "category": "Dark",
+      "name": "OSM 午夜模式（详细深色）",
+      "category": "深色模式",
       "url": "/api/tiles/osm/{z}/{x}/{y}",
       "maxZoom": 19,
       "className": "geoport-dark-tiles",
@@ -32,24 +32,24 @@
     },
     {
       "id": "esri_world_street",
-      "name": "Esri World Street Map",
-      "category": "Streets",
+      "name": "Esri 世界街道图",
+      "category": "街道",
       "url": "/api/tiles/esri_street/{z}/{x}/{y}",
       "maxZoom": 19,
       "attribution": "Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap"
     },
     {
       "id": "esri_world_topo",
-      "name": "Esri World Topo Map",
-      "category": "Streets & Terrain",
+      "name": "Esri 世界地形图",
+      "category": "街道与地形",
       "url": "/api/tiles/esri_topo/{z}/{x}/{y}",
       "maxZoom": 19,
       "attribution": "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, USGS"
     },
     {
       "id": "esri_light_smooth",
-      "name": "Esri Light Smooth Canvas",
-      "category": "Streets",
+      "name": "Esri 浅色平滑画布",
+      "category": "街道",
       "maxZoom": 16,
       "attribution": "Tiles &copy; Esri &mdash; Esri, HERE, Garmin, OpenStreetMap",
       "sublayers": [
@@ -59,56 +59,56 @@
     },
     {
       "id": "osm",
-      "name": "OpenStreetMap",
-      "category": "Streets",
+      "name": "OpenStreetMap 标准图",
+      "category": "街道",
       "url": "/api/tiles/osm/{z}/{x}/{y}",
       "maxZoom": 19,
       "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors"
     },
     {
       "id": "osm_hot",
-      "name": "OpenStreetMap HOT",
-      "category": "Streets",
+      "name": "OpenStreetMap 人道主义风格",
+      "category": "街道",
       "url": "/api/tiles/hot/{z}/{x}/{y}",
       "maxZoom": 19,
       "attribution": "&copy; OpenStreetMap contributors &bull; Humanitarian OSM Team"
     },
     {
       "id": "opnvkarte",
-      "name": "OPNVKarte (Transit & Airports)",
-      "category": "Specialty",
+      "name": "OPNVKarte（公共交通与机场）",
+      "category": "特色图层",
       "url": "/api/tiles/opnvkarte/{z}/{x}/{y}",
       "maxZoom": 18,
       "attribution": "Map <a href=\"https://memomaps.de/\" target=\"_blank\">memomaps.de</a> CC-BY-SA &bull; &copy; OpenStreetMap"
     },
     {
       "id": "cyclosm",
-      "name": "CyclOSM (Trails & Bikeways)",
-      "category": "Specialty",
+      "name": "CyclOSM（步道与骑行道）",
+      "category": "特色图层",
       "url": "/api/tiles/cyclosm/{z}/{x}/{y}",
       "maxZoom": 19,
       "attribution": "&copy; OpenStreetMap contributors &bull; CyclOSM"
     },
     {
       "id": "opentopomap",
-      "name": "OpenTopoMap (Contours)",
-      "category": "Streets & Terrain",
+      "name": "OpenTopoMap（等高线地形）",
+      "category": "街道与地形",
       "url": "/api/tiles/topo/{z}/{x}/{y}",
       "maxZoom": 17,
       "attribution": "&copy; OpenStreetMap &bull; &copy; OpenTopoMap (CC-BY-SA)"
     },
     {
       "id": "esri_natgeo",
-      "name": "Esri National Geographic",
-      "category": "Specialty",
+      "name": "Esri 国家地理",
+      "category": "特色图层",
       "url": "/api/tiles/esri_natgeo/{z}/{x}/{y}",
       "maxZoom": 16,
       "attribution": "Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ"
     },
     {
       "id": "esri_satellite_hybrid",
-      "name": "Esri Satellite Hybrid (with Roads)",
-      "category": "Satellite",
+      "name": "Esri 卫星混合图（含路网）",
+      "category": "卫星图",
       "maxZoom": 19,
       "attribution": "Tiles &copy; Esri &mdash; Source: Esri, USDA, USGS, GeoEye, Getmapping",
       "sublayers": [
@@ -119,16 +119,16 @@
     },
     {
       "id": "esri_world_imagery",
-      "name": "Esri World Imagery (Clean Satellite)",
-      "category": "Satellite",
+      "name": "Esri 世界影像（纯净卫星图）",
+      "category": "卫星图",
       "url": "/api/tiles/satellite/{z}/{x}/{y}",
       "maxZoom": 19,
       "attribution": "Tiles &copy; Esri &mdash; World Imagery"
     },
     {
       "id": "stadia_osm_bright",
-      "name": "Stadia Maps (OSM Bright)",
-      "category": "Stadia (Localhost / Key)",
+      "name": "Stadia 地图（OSM 明亮版）",
+      "category": "Stadia（本地 / 需密钥）",
       "url": "https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png",
       "maxZoom": 20,
       "stadia": true,
@@ -136,8 +136,8 @@
     },
     {
       "id": "stadia_alidade_smooth",
-      "name": "Stadia Alidade Smooth",
-      "category": "Stadia (Localhost / Key)",
+      "name": "Stadia Alidade 平滑浅色",
+      "category": "Stadia（本地 / 需密钥）",
       "url": "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png",
       "maxZoom": 20,
       "stadia": true,
@@ -145,8 +145,8 @@
     },
     {
       "id": "stadia_alidade_dark",
-      "name": "Stadia Alidade Smooth Dark",
-      "category": "Stadia (Localhost / Key)",
+      "name": "Stadia Alidade 平滑深色",
+      "category": "Stadia（本地 / 需密钥）",
       "url": "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png",
       "maxZoom": 20,
       "stadia": true,
@@ -154,8 +154,8 @@
     },
     {
       "id": "stadia_outdoors",
-      "name": "Stadia Outdoors",
-      "category": "Stadia (Localhost / Key)",
+      "name": "Stadia 户外地图",
+      "category": "Stadia（本地 / 需密钥）",
       "url": "https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png",
       "maxZoom": 20,
       "stadia": true,
@@ -163,8 +163,8 @@
     },
     {
       "id": "stadia_stamen_terrain",
-      "name": "Stadia Stamen Terrain",
-      "category": "Stadia (Localhost / Key)",
+      "name": "Stadia Stamen 地形图",
+      "category": "Stadia（本地 / 需密钥）",
       "url": "https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}{r}.png",
       "maxZoom": 18,
       "stadia": true,
@@ -172,8 +172,8 @@
     },
     {
       "id": "stadia_stamen_toner",
-      "name": "Stadia Stamen Toner",
-      "category": "Stadia (Localhost / Key)",
+      "name": "Stadia Stamen 黑白线稿",
+      "category": "Stadia（本地 / 需密钥）",
       "url": "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png",
       "maxZoom": 20,
       "stadia": true,
@@ -181,8 +181,8 @@
     },
     {
       "id": "stadia_stamen_watercolor",
-      "name": "Stadia Stamen Watercolor",
-      "category": "Stadia (Localhost / Key)",
+      "name": "Stadia Stamen 水彩风格",
+      "category": "Stadia（本地 / 需密钥）",
       "url": "https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg",
       "maxZoom": 16,
       "stadia": true,
@@ -190,8 +190,8 @@
     },
     {
       "id": "stadia_alidade_satellite",
-      "name": "Stadia Alidade Satellite",
-      "category": "Stadia (Localhost / Key)",
+      "name": "Stadia Alidade 卫星图",
+      "category": "Stadia（本地 / 需密钥）",
       "url": "https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg",
       "maxZoom": 20,
       "stadia": true,
