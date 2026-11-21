@@ -38,6 +38,7 @@ jobs:
           pyinstaller --onefile --name "GeoPort_CN" `
             --add-data "templates;templates" `
             --collect-all pymobiledevice3 `
+            --collect-all pytun_pmd3 `
             --recursive-copy-metadata pymobiledevice3 `
             --copy-metadata pyimg4 `
             --collect-data pycountry `
